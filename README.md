@@ -3,7 +3,7 @@
 
 <title>Proxy</title>
 type a website
-
+<!DOCTYPE HTML>
 
 <html>
   
