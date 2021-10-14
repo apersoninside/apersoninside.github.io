@@ -1,25 +1,81 @@
 # apersoninside.github.io
 
 
-<title>Proxy</title>
-type a website
-<!DOCTYPE HTML>
-
-<html>
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@apersoninside 
+rullinoiz
+/
+rullinoiz.github.io
+Public
+0
+00
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+rullinoiz.github.io/index.html
+@rullinoiz
+rullinoiz reupdate because you cant stop it from giving alerts
+Latest commit 8cf34e7 on Sep 10
+ History
+ 1 contributor
+48 lines (44 sloc)  2.05 KB
   
-  <title>Proxy</title>
-type a website
+<!doctype html>
+<html>
+<head>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta id="title" name="apple-mobile-web-app-title" content="web app">
 
-
-<script> function wait(ms) { var d = new Date(); var d2 = null; do { d2 = new Date(); } while(d2-d < ms); }
-const queryString = window.location.search;
-const urlParams = new URLSearchParams(queryString);
-if (urlParams.has('url')) {
-	const website = urlParams.get('url');
-	const ico = "http://www.google.com/s2/favicons?domain=" + website;
-	wait(1000);
-	document.getElementById("bruv").innerHTML = '<iframe src="' + decodeURIComponent(website) + '" width="100%" height="100%" style="position:fixed; top:0; left:0; bottom:50; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;">';
-	document.getElementById("icon").href = decodeURIComponent(urlParams.get('icon'));
-}
+<link id="icon" rel="apple-touch-icon" href="round_cydia_icon_by_5284973_d4khkre_fullview_m8Z_icon.ico">
+<link rel="icon" href="round_cydia_icon_by_5284973_d4khkre_fullview_m8Z_icon.ico">
+<link rel="shortcut icon" href="round_cydia_icon_by_5284973_d4khkre_fullview_m8Z_icon.ico">
+  
+<title>web app</title>
+</head>
+<body>
+<div id="bruv" width="100%" height="100%" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;">
+<!-- pastes shit in here -->
+<p>type a website</p>
+<input type="text" id="textbox" value="https://">
+<br>
+<input type="text" id="urlicon" value="https://">
+<input type="button" name="button" value="search" onclick="window.location.replace('https://rullinoiz.github.io/?url=' + encodeURIComponent(document.getElementById('textbox').value) + '&icon=' + encodeURIComponent(document.getElementById('urlicon').value));">
+</div>
+<script>
+	var a=true;
+	while(a){
+		confirm("press OK a few times then check the box that says 'prevent this page from making new messages' or some shit \nthis is necessary to make chrome use more power to get by the blocker");
+	}
 </script>
+<script>
+	function wait(ms) {
+		var d = new Date();
+		var d2 = null;
+		do { d2 = new Date(); }
+		while(d2-d < ms);
+	}
+
+	const queryString = window.location.search;
+	const urlParams = new URLSearchParams(queryString);
+	if (urlParams.has('url')) {
+		const website = urlParams.get('url');
+		const ico = "http://www.google.com/s2/favicons?domain=" + website;
+		wait(1000);
+		document.getElementById("bruv").innerHTML = '<iframe src="' + decodeURIComponent(website) + '" width="100%" height="100%" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;">';
+		document.getElementById("icon").href = decodeURIComponent(urlParams.get('icon'));
+	}
+</script>
+
+</body>
 </html>
