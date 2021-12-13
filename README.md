@@ -19,7 +19,7 @@
 <input type="text" id="textbox" value="https://">
 <br>
 <input type="text" id="urlicon" value="https://">
-<input type="button" name="button" value="search" onclick="window.location.replace('https://rullinoiz.github.io/?url=' + encodeURIComponent(document.getElementById('textbox').value) + '&icon=' + encodeURIComponent(document.getElementById('urlicon').value));">
+<input type="button" name="button" value="search" onclick="window.location.replace('https://apersoninside.github.io/?url=' + encodeURIComponent(document.getElementById('textbox').value) + '&icon=' + encodeURIComponent(document.getElementById('urlicon').value));">
 </div>
 
 
