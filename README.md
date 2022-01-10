@@ -1,4 +1,4 @@
-# apersoninside.github.io
+# yeetus.github.io
 <html>
 <head>
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -17,7 +17,7 @@
 <input type="text" id="textbox" value="https://">
 <br>
 <input type="text" id="urlicon" value="Ex. Https://krunker.io">
-<input type="button" name="button" value="search" onclick="window.location.replace('https://apersoninside.github.io/?url=' + encodeURIComponent(document.getElementById('textbox').value) + '&icon=' + encodeURIComponent(document.getElementById('urlicon').value));">
+<input type="button" name="button" value="search" onclick="window.location.replace('https://yeetus.github.io/?url=' + encodeURIComponent(document.getElementById('textbox').value) + '&icon=' + encodeURIComponent(document.getElementById('urlicon').value));">
 </div>
 <script>
 	function wait(ms) {
